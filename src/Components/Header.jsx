@@ -4,7 +4,9 @@ function Header() {
   return (
     <div>
         <div className='w-[90px] h-[90px] bg-black '>
-            Sup Mo Fucka
+            <img src= '/public/nautical compass.png'
+            className='p-7'
+            />
         </div>
     </div>
   )
