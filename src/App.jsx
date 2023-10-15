@@ -8,6 +8,7 @@ import ProfilePic from './Components/ProfilePic'
 import Introduction from './Components/Introduction'
 import About from './Components/About'
 import Services from './Components/Services'
+import ProgressBar from './Components/ProgressBar'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,6 +25,7 @@ function App() {
           <Services />
         </div>
         <div className='hidden md:block'>
+          <ProgressBar />
           <ProfilePic />
         </div>
       </div>

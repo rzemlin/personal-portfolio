@@ -7,13 +7,13 @@ function Services() {
             id: 1,
             title: Strings.FRONTED,
             desc: Strings.FRONTED_DESC,
-            logo: "/compass.png",
+            logo: "/design.png",
         },
         {
             id: 2,
             title: Strings.BACKEND,
             desc: Strings.BACKEND_DESC,
-            logo: "/compass.png",
+            logo: "/backend.png",
         },
     ];
     return (
