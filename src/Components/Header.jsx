@@ -27,7 +27,7 @@ function Header() {
                     className='p-7'
                 />
             </div>
-            <div className='flex gap-14'>
+            <div className='hidden md:flex gap-14'>
                 {menu.map((item) => (
                     // eslint-disable-next-line react/jsx-key
                     <div className='cursor-pointer hover:underline font-medium'>
