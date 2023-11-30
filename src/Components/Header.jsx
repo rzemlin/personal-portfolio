@@ -41,8 +41,18 @@ function Header() {
           </div>
         ))}
       </div>
-      <div>
-        {toggle? "toggle is on": "toggle is off"}
+      <div className="md:hidden lg:hidden">
+        {!toggle ? <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        onClick={()=>setToggle(true)} viewBox="0 0 24 24"  stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+          :
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+          onClick={()=>setToggle(false)}viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        }
+        {toggle? "Shown menu" :null}
       </div>
       <div
         className="w-[90px] h-[90px]
